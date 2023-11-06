@@ -5,12 +5,12 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: hashicorp-vault
+    namespace: cert-manager-operator
     server: 'https://kubernetes.default.svc'
   project: default
   source:
     path: deploy/helm/vault-install
-    repoURL: 'https://github.com/openlab-red/hashicorp-vault-for-openshift'
+    repoURL: 'https://github.com/bdmsky/hashicorp-vault-for-openshift'
     targetRevision: master
   syncPolicy:
     automated: {}
