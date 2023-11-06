@@ -66,7 +66,7 @@ base:
           storage "raft" {
             path = "/vault/data"
             retry_join {
-              leader_api_addr = "https://vault-active.hashicorp-vault.svc:8200"
+              leader_api_addr = "https://vault-active.cert-manager-operator.svc:8200"
               leader_ca_cert_file = "/etc/vault-tls/vault-certs/ca.crt"
             }
           }
